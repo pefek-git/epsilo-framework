@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://ce186ufj4gqq2"]
+
+[ext_resource type="Script" uid="uid://d2b2004f3fs57" path="res://_scripts/pause_menu.gd" id="1_kukqi"]
+[ext_resource type="FontFile" uid="uid://keawmi2dfsmn" path="res://Fonts/Impacted.ttf" id="1_myx47"]
+[ext_resource type="FontFile" uid="uid://cm2aaweadry1" path="res://Fonts/FiraCode-VariableFont_wght.ttf" id="2_kukqi"]
+
+[node name="PauseMenu" type="Control" unique_id=1402208314]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kukqi")
+
+[node name="Background" type="PanelContainer" parent="." unique_id=1034848014]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -161.0
+offset_top = -168.0
+offset_right = 163.0
+offset_bottom = 168.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Container" type="VBoxContainer" parent="Background" unique_id=1053055147]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Background/Container" unique_id=73188030]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_myx47")
+theme_override_font_sizes/font_size = 29
+text = "Pause"
+horizontal_alignment = 1
+
+[node name="Resume" type="Button" parent="Background/Container" unique_id=1749529387]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_kukqi")
+text = "Continue"
+
+[node name="Exit" type="Button" parent="Background/Container" unique_id=1396922277]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_kukqi")
+text = "Exit"
+
+[connection signal="pressed" from="Background/Container/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Background/Container/Exit" to="." method="_on_exit_pressed"]
