@@ -1,0 +1,16 @@
+[gd_resource type="Theme" format=3 uid="uid://c0t73o3l2j8xh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l4fqd"]
+bg_color = Color(0, 0, 0, 1)
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[resource]
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_l4fqd")

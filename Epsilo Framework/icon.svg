@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128mm"
+   height="128mm"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:export-bgcolor="#00000000"
+     inkscape:zoom="1.4039843"
+     inkscape:cx="96.511052"
+     inkscape:cy="224.36149"
+     inkscape:window-width="1920"
+     inkscape:window-height="994"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#6a8700;fill-opacity:1;stroke:#667e00;stroke-width:2;stroke-opacity:1;stroke-dasharray:none"
+       id="rect1"
+       width="127.92531"
+       height="127.92531"
+       x="0.26651105"
+       y="0.26651105" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:2.05367;stroke-dasharray:none;stroke-opacity:0.200389"
+       d="m 10.14209,2.4443745 h 108.1782 V 14.5374 H 21.314146 v 33.805506 h 35.69608 v 5.771672 h -35.69608 v 1.92389 h 35.423595 v 6.046513 H 21.314146 V 114.5797 h 96.733644 v 9.89431 H 9.597111 V 62.359823 H 4.4198172 V 56.58815 H 9.052134 V 54.114578 H 4.4198172 V 49.167429 H 8.779645 Z"
+       id="path15" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       d="m 56.571719,36.42923 v 38.538388 h 7.161168 V 35.76965 h -7.34962 z"
+       id="path16" />
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       id="rect16"
+       width="128.90102"
+       height="128.71257"
+       x="0"
+       y="-0.5653553" />
+  </g>
+</svg>
