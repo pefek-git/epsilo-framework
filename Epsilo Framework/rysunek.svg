@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64mm"
+   height="64mm"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="bitmapa.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="rysunek.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:export-bgcolor="#ffffff00"
+     inkscape:zoom="2"
+     inkscape:cx="93.75"
+     inkscape:cy="84.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="994"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000000;stroke-width:0.1"
+       d="M 0.6624222,3.5978994 35.530647,63.991434 62.824031,48.233591 61.356173,45.691184 36.436451,60.078593 23.551326,37.760902 39.170708,28.743047 37.759267,26.298363 22.327936,35.207646 21.379514,33.564933 36.327707,24.934588 34.994215,22.624909 11.538552,36.167041 l 1.418444,2.456818 13.117212,-7.573227 -7.096967,4.097435 0.833488,1.443643 -5.932732,3.425267 1.506129,2.608689 5.685355,-3.28244 L 24.033776,37.63179 5.5543561,5.6244958 17.732669,-1.406656 16.274205,-3.9327891 Z"
+       id="path1" />
+  </g>
+</svg>

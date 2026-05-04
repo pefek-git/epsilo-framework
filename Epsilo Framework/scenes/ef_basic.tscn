@@ -154,13 +154,13 @@ mesh = SubResource("BoxMesh_rpvyq")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Structure/Ceiling" unique_id=1648117483]
 shape = SubResource("BoxShape3D_l58qg")
 
-[node name="Leg" type="StaticBody3D" parent="Environment/Structure" unique_id=2051778539]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7308265, 0.6596216, -1.5863509)
+[node name="Leg" type="StaticBody3D" parent="Environment/Structure" unique_id=807009991]
+transform = Transform3D(0.99994105, -0.010855734, 0, 0.010855734, 0.99994105, 0, 0, 0, 1, 1.600729, 0.71192956, -1.4997091)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Structure/Leg" unique_id=1636266007]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Structure/Leg" unique_id=1046949902]
 shape = SubResource("BoxShape3D_imss4")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Structure/Leg" unique_id=1431847429]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Structure/Leg" unique_id=750672073]
 material_override = ExtResource("3_l58qg")
 mesh = SubResource("BoxMesh_n8vyo")
 

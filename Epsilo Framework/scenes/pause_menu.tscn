@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://ce186ufj4gqq2"]
 
-[ext_resource type="Script" uid="uid://d2b2004f3fs57" path="res://_scripts/pause_menu.gd" id="1_kukqi"]
-[ext_resource type="FontFile" uid="uid://keawmi2dfsmn" path="res://Fonts/Impacted.ttf" id="1_myx47"]
-[ext_resource type="FontFile" uid="uid://cm2aaweadry1" path="res://Fonts/FiraCode-VariableFont_wght.ttf" id="2_kukqi"]
+[ext_resource type="Script" uid="uid://di0us2evibhph" path="res://scenes/pause_menu.gd" id="1_myx47"]
+[ext_resource type="FontFile" uid="uid://jc5ywk7hjvyd" path="res://Fonts/Rajdhani-Bold.ttf" id="1_n87rw"]
+[ext_resource type="FontFile" uid="uid://cv4w2ngmtsbm5" path="res://Fonts/Rajdhani-SemiBold.ttf" id="2_kukqi"]
 
-[node name="PauseMenu" type="Control" unique_id=1402208314]
+[node name="Pause" type="Control" unique_id=893181437]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -12,41 +12,60 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_kukqi")
+script = ExtResource("1_myx47")
 
-[node name="Background" type="PanelContainer" parent="." unique_id=1034848014]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1158048509]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4, 0.4, 0.4, 0.37254903)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=18846263]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -161.0
-offset_top = -168.0
-offset_right = 163.0
-offset_bottom = 168.0
+offset_left = -567.0
+offset_top = -163.0
+offset_right = 71.0
+offset_bottom = 34.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Container" type="VBoxContainer" parent="Background" unique_id=1053055147]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1299956265]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Background/Container" unique_id=73188030]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1595041598]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_myx47")
-theme_override_font_sizes/font_size = 29
-text = "Pause"
+theme_override_fonts/font = ExtResource("2_kukqi")
+theme_override_font_sizes/font_size = 32
+text = "Epsilo Sandbox - Pause Menu"
 horizontal_alignment = 1
 
-[node name="Resume" type="Button" parent="Background/Container" unique_id=1749529387]
+[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer" unique_id=701122680]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_kukqi")
-text = "Continue"
+theme_override_fonts/font = ExtResource("1_n87rw")
+theme_override_font_sizes/font_size = 28
+text = "Resume"
 
-[node name="Exit" type="Button" parent="Background/Container" unique_id=1396922277]
+[node name="Settings" type="Button" parent="MarginContainer/VBoxContainer" unique_id=930986299]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_kukqi")
-text = "Exit"
+theme_override_fonts/font = ExtResource("1_n87rw")
+theme_override_font_sizes/font_size = 28
+text = "Settings
+"
 
-[connection signal="pressed" from="Background/Container/Resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="Background/Container/Exit" to="." method="_on_exit_pressed"]
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=848615391]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_n87rw")
+theme_override_font_sizes/font_size = 28
+text = "Quit Game"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

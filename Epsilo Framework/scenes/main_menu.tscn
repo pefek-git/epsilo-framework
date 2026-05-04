@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://8s20irt03tl4"]
+
+[ext_resource type="FontFile" uid="uid://bsy1c3lgpqngb" path="res://Fonts/Montserrat-Black.ttf" id="1_bqqt6"]
+[ext_resource type="Script" uid="uid://snxaoe4r0pll" path="res://scenes/main_menu.gd" id="1_wu84c"]
+[ext_resource type="Texture2D" uid="uid://dxijmfymq2sle" path="res://ef_e_sandbox.png" id="2_bqqt6"]
+[ext_resource type="FontFile" uid="uid://jc5ywk7hjvyd" path="res://Fonts/Rajdhani-Bold.ttf" id="3_wu84c"]
+
+[node name="MainMenu" type="Control" unique_id=1357133049]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wu84c")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1542666081]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=944580561]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -346.5
+offset_top = -70.0
+offset_right = 30.5
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="sp_btn" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=1045922165]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_bqqt6")
+theme_override_font_sizes/font_size = 28
+text = "Start Singleplayer Game
+"
+
+[node name="Settings" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=2054153417]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_bqqt6")
+theme_override_font_sizes/font_size = 28
+text = "Settings
+"
+
+[node name="Quit" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=1524176358]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_bqqt6")
+theme_override_font_sizes/font_size = 28
+text = "Quit the Game"
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1486914113]
+offset_left = 272.0
+offset_top = 194.0
+offset_right = 548.0
+offset_bottom = 251.0
+theme_override_fonts/font = ExtResource("3_wu84c")
+theme_override_font_sizes/font_size = 44
+text = "Epsilo Sandbox"
+
+[node name="Logo" type="TextureRect" parent="CanvasLayer" unique_id=1736339315]
+offset_left = -1.0
+offset_right = 261.0
+offset_bottom = 252.0
+texture = ExtResource("2_bqqt6")
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/sp_btn" to="." method="_on_sp_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

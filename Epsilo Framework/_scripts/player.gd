@@ -6,6 +6,7 @@ extends CharacterBody3D
 
 @export var SPEED : float = 5.5
 @export var SPEED_CROUCH : float = 2.25
+@export var SPEED_WALK : float = 3.15
 @export var JUMP_VELOCITY : float = 4.5
 @export var MSENS : float = 0.03
 
@@ -19,6 +20,8 @@ var t_bob = 0.8
 var gravity = 9.8
 
 var _is_crouching : bool = false
+
+var _is_walking : bool = false
 
 @onready var head = $Head
 @onready var camera = $Head/Eyes
@@ -43,10 +46,10 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-	elif Input.is_action_just_pressed("Pause"):
-		get_tree().quit()
 	elif Input.is_action_just_pressed("Chicken"):	#Another Chicken
 		toggle_crouch()
+	elif Input.is_action_just_pressed("Sprint"):
+		toggle_walk()
 	
 	var input_dir := Input.get_vector("Left", "Right", "Forward", "Backward")
 	var direction : Vector3 = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
@@ -79,3 +82,9 @@ func toggle_crouch():	# Chicken Mode
 		_speed = SPEED_CROUCH
 		print("CHICKEN")	# Yep another chicken classic
 	_is_crouching = !_is_crouching
+func toggle_walk():
+	if _is_walking:
+		_speed = SPEED
+	elif !_is_walking:
+		_speed = SPEED_WALK
+	_is_walking = !_is_walking
